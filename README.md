@@ -26,25 +26,13 @@ A lightweight, zero-dependency prayer times countdown module for **Waybar** (Hyp
 
 ## 🖥️ Preview
 
-### Bar Display:
-```
-[ 14:31 ]   [ 🕌 Ashar -25m ]   [ 🔔 0 ]
-```
+<p align="center">
+  <img src="preview-bar.png" alt="Waybar Prayer Times Bar Preview" width="100%" />
+</p>
 
-### Hover Tooltip:
-```text
-🕌 Jadwal Sholat (Bekasi)
-─────────────────────────
-  Subuh   : 04:26
-  Terbit  : 05:43
-  Dzuhur  : 11:46
-➤ Ashar   : 14:56  (25m lagi)
-  Maghrib : 17:48
-  Isya    : 18:57
-─────────────────────────
-🖱️ Klik: Notifikasi jadwal
-🖱️ Klik Kanan: Perbarui lokasi
-```
+<p align="center">
+  <img src="preview-card.png" alt="Waybar Prayer Times Notification Card" width="70%" />
+</p>
 
 ---
 

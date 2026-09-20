@@ -1,0 +1,31 @@
+/* ==============================================================================
+   Waybar Prayer Times CSS Styling Example
+   Append this to your ~/.config/waybar/style.css
+   ============================================================================== */
+
+/* Normal state */
+#custom-prayer {
+    color: #b9f27c; /* Green accent / adjust to your theme */
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+/* Warning state (< 15 minutes before prayer time) */
+#custom-prayer.warning {
+    color: #ff9e64; /* Orange/Yellow warning */
+}
+
+/* Adzan state (Time has arrived) */
+#custom-prayer.adzan {
+    color: #ff5555; /* Red alert / blinking */
+    animation-name: prayer-blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes prayer-blink {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.3; }
+    100% { opacity: 1; }
+}

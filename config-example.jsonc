@@ -1,0 +1,23 @@
+// ==============================================================================
+// Waybar Configuration Example for custom/prayer
+// Add this module to your ~/.config/waybar/config or config.jsonc
+// ==============================================================================
+
+{
+    // Add to modules list:
+    "modules-center": [
+        "clock",
+        "custom/prayer"
+    ],
+
+    // Module definition:
+    "custom/prayer": {
+        "format": "{}",
+        "exec": "$HOME/.local/bin/waybar-prayer-times",
+        "interval": 60,
+        "return-type": "json",
+        "on-click": "$HOME/.local/bin/waybar-prayer-times --notify",
+        "on-click-right": "$HOME/.local/bin/waybar-prayer-times --force",
+        "tooltip": true
+    }
+}
